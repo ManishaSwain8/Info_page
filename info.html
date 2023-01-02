@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <link href="info.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       
+            <nav id="navbar">
+                <header>CONTENT</header>
+                <ul class="nav-stacked">
+                    <a class="nav-link" href="#What_is_OPP?" rel="internal">
+                        <li>What is OPP?</li>
+                    </a>
+                    <a class="nav-link" href="#Introduction" rel="internal">
+                        <li>Introduction</li>
+                    </a>
+                    <a class="nav-link" href="#Classes" rel="internal">
+                        <li>Classes </li>
+                    </a>
+                    <a class="nav-link" href="#Methods" rel="internal">
+                        <li>Methods</li>
+                    </a>
+                    <a class="nav-link" href="#Constructor" rel="internal">
+                        <li>Constructor</li>
+                    </a>
+                    <a class="nav-link" href="#Encapsulation" rel="internal">
+                        <li>Encapsulation</li>
+                    </a>
+                    <a class="nav-link" href="#Inheritance" rel="internal">
+                        <li>Inheritance</li>
+                    </a>
+                    <a class="nav-link" href="#Polymerphism" rel="internal">
+                        <li>Polymerphism</li>
+                    </a>
+                    <a class="nav-link" href="#Abstraction" rel="internal">
+                        <li>Abstraction</li>
+                    </a>
+                </ul>
+
+            </nav>
+        </div>
+        
+        <main id ="main-doc">
+            <section class="main-section" id="What_is_OPP?">
+                <header><b>What is OPP?</b></header><article>
+                <p><ul>
+            OOP stands for Object-Oriented Programming.<br>
+
+            Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.</ul>
+
+            Object-oriented programming has several advantages over procedural programming:<br>
+
+            <li>OOP is faster and easier to execute<br>
+            <li>OOP provides a clear structure for the programs<br>
+            <li>OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug<br>
+            <li>OOP makes it possible to create full reusable applications with less code and shorter development time</li><br></p></article></section>
+            <section class="main-section" id="Introduction">
+                <header><b>Introduction</b></header><article>
+                <p>Java is a popular programming language, created in 1995.
+
+                    It is owned by Oracle, and more than 3 billion devices run Java.
+                    
+                    It is used for:<br>
+                    
+                   1. Mobile applications (specially Android apps)<br>
+                   2. Desktop applications<br>
+                   3. Web applications<br>
+                   4. Web servers and application servers<br>
+                   5. Games<br>
+                   6. Database connection<br>
+                   7. And much, much more!</p></article>
+            </section>
+            <section class="main-section" id="Classes">
+                <header><b>Classes</b></header><article>
+                <p>Java is an object-oriented programming language.<br>
+
+                    Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object.<br> The car has attributes, such as weight and color, and methods, such as drive and brake.
+                    
+                    A Class is like an object constructor, or a "blueprint" for creating objects.<br>
+                </p></article>
+            </section>
+            <section class="main-section" id="Methods">
+                <header><b>Methods</b></header><article>
+              <p><li>A method is a block of code which only runs when it is called.</li><br>
+
+                    You can pass data, known as parameters, into a method.<br>
+                    
+                    Methods are used to perform certain actions, and they are also known as functions.<br>
+                    
+                    Why use methods? <br>To reuse code: define the code once, and use it many times.<br>
+                    Create a method named myMethod() in Main:
+                <code>
+
+                    public class Main {
+                      static void myMethod() {
+                        System.out.println("Hello World!");
+                      }
+                    }</code></p></article>
+            </section>
+            <section class="main-section" id="Constructor">
+                <header><b>Constructor</b></header><article>
+                <p>A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. <br>It can be used to set initial values for object attributes<br>
+                    A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.<br> It can be used to set initial values for object attributes<br>
+                <code>public class Main {
+                    int x;
+                  
+                    public Main(int y) {
+                      x = y;
+                    }
+                  
+                    public static void main(String[] args) {
+                      Main myObj = new Main(5);
+                      System.out.println(myObj.x);
+                    }
+                  }
+                  
+                  // Outputs 5</code></p></article>
+            </section>  
+            <section class="main-section" id="Encapsulation">
+                <header><b>Encapsulation</b></header><article>
+                <p>The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:<br>
+
+                    1.declare class variables/attributes as private<br>
+                    2.provide public get and set methods to access and update the value of a private variable<br>
+                    <code>public class Person {
+                        private String name; // private = restricted access
+                      
+                        // Getter
+                        public String getName() {
+                          return name;
+                        }
+                      
+                        // Setter
+                        public void setName(String newName) {
+                          this.name = newName;
+                        }
+                      }</code>
+                    </p></article>
+            </section>
+            <section class="main-section" id="Inheritance">
+                <header><b>Inheritance</b></header><article>
+                <p>In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:<br>
+
+                    1.subclass (child) - the class that inherits from another class<br>
+                    2.superclass (parent) - the class being inherited from<br>
+                    To inherit from a class, use the extends keyword.<br>
+                <code>final class Vehicle {
+                    ...
+                  }
+                  
+                  class Car extends Vehicle {
+                    ...
+                  }</code></p></article>
+            </section> 
+            <section class="main-section" id="Polymerphism">
+                <header><b>Polymerphism</b></header><article>
+                <p>Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.<br>
+
+                    Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. <br>This allows us to perform a single action in different ways.
+                    <br>
+                    For example, think of a superclass called Animal that has a method called animalSound().<br> Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.) </p>
+            </section>
+            <section class="main-section" id="Abstraction">
+                <header><b>Abstraction</b></header>
+                <p>Data abstraction is the process of hiding certain details and showing only essential information to the user.<br>
+                    Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).<br>
+                    
+                    The abstract keyword is a non-access modifier, used for classes and methods:<br>
+                    
+                    Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).<br>
+                    
+                    Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).<br>
+                    An abstract class can have both abstract and regular methods:<br>
+                <code>abstract class Animal {
+                    public abstract void animalSound();
+                    public void sleep() {
+                      System.out.println("Zzz");
+                    }
+                  }</code></p></article>
+            </section>
+            <footer>
+               <p> All the information above are taken from:</p><a
+               href="https://www.w3schools.com/java/"
+               target="_blank">W3School</a>
+            </footer>
+    </body>
+</html>
